@@ -16,3 +16,5 @@ path = "src/main.rs"
 [dependencies]
 bufstream = "0.1.4"
 clap = { version = "4.0.18", features = ["derive"] }
+env_logger = "0.9.3"
+log = "0.4.17"
