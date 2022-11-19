@@ -1,13 +1,10 @@
 use std::{
     collections::HashMap,
-    sync::{
-        mpsc::{self, Receiver, Sender},
-        Arc, Mutex,
-    },
+    sync::{mpsc::Sender, Arc, Mutex},
 };
 
 use crate::{
-    connect::{ConnectionError, ConnectionRead, ConnectionWrite},
+    connect::{ConnectionError, ConnectionRead},
     errors::LoopControlError,
     events::IrcEvent,
     handler::Handler,

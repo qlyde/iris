@@ -9,7 +9,7 @@ use std::{
     collections::HashMap,
     net::IpAddr,
     sync::{
-        mpsc::{self, Receiver, Sender},
+        mpsc::{self, Sender},
         Arc, Mutex,
     },
     thread,
@@ -17,7 +17,7 @@ use std::{
 
 use client::Client;
 use connect::{ConnectionRead, ConnectionWrite};
-use types::{Channel, Nick, Target};
+use types::{Channel, Nick};
 
 use crate::{
     connect::ConnectionManager, errors::LoopControlError, events::IrcEvent, types::SERVER_NAME,
